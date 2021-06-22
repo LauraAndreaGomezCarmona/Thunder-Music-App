@@ -1,0 +1,325 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+}
+/*Side navigation bar*/
+h1{
+  text-transform: uppercase;
+  font-size: 44px;
+  letter-spacing: 2px;
+  padding: 20px 0 20px 0;
+  color: rgb(9, 56, 117);
+}
+h2{
+  line-height: 50px;
+}
+h5{
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 34px;
+  background-color: rgb(16, 81, 201);
+  color: white;
+}
+h6{
+  font-size: 40px;
+  box-shadow: 3px 6px 40px rgb(105, 147, 236);
+}
+.flex{
+  display: flex;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+.side-nav-bar{
+  height: 322%;
+  width: 360px;
+  background:linear-gradient(180deg, rgb(12, 126, 233), rgb(63, 171, 243));
+}
+.nav-bar-list{
+  height: auto;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+.nav-bar-items{
+  padding: 4px 4px 4px 20px;
+  margin: 40px;
+  display: flex;
+  font-size: 26px;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid rgb(9, 124, 231);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+}
+.nav-icon{
+  padding: 10px;
+  font-size: large;
+  align-items: center;
+}
+.nav-title{
+  padding: 8px;
+}
+.nav-bar-items:hover{
+  cursor: pointer;
+  background-color:rgb(17, 77, 189);
+}
+.logo{
+  padding: 30px 20px 30px 20px;
+  width: 340px;
+  justify-content: center;
+}
+.headphones-icon{
+  width: 50px;
+  height: 50px;
+}
+.thunder-icon{
+  width: 50px;
+  height: 50px;
+}
+
+/*Songs Quiz*/
+.game-title{
+  font-size: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 40px 22px 40px;
+  line-height: 50px;
+  -webkit-text-stroke: 1px white;
+  color: black; 
+}
+audio{
+  margin: 10px 60px 18px 60px;
+  outline: none;
+  border: 4px solid rgb(243, 228, 18);
+  border-radius: 26px;
+}
+button:focus{
+  outline: none;
+}
+button:disabled{
+  opacity: 0.7;
+  color: black;
+}
+.action{
+  margin: 10px auto 16px auto;
+}
+.quiz-container{
+  box-shadow: 3px 6px 40px rgb(125, 127, 128);
+  padding: 40px;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+  padding: 0 60px 30px 60px;
+  background-color: rgb(230, 225, 225);
+}
+.songs-count{
+  font-size: 24px;
+  text-align: center;
+  background-color:rgb(16, 81, 201);
+  padding: 8px;
+  text-transform: uppercase;
+  margin: 0 100px 20px 100px;
+  font-weight: bold;
+  box-shadow: 1px 3px 40px rgb(245, 243, 243);
+  color: white;
+}
+.quiz-section{
+  font-size: 22px;
+}
+.songs-list{
+  list-style: none;
+  width: 100%;
+}
+.song-options-wrap{
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+.correct-song-button{
+  width: 94%;
+  padding: 10px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: 4px solid  rgb(9, 147, 226);
+}
+.correct-song-button:hover{
+  background-color: rgb(109, 151, 230);
+}
+.next{
+  width: 50%;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 28px;
+  box-shadow: 3px 6px 40px rgb(189, 191, 192);
+  margin-top: 10px auto 10px auto;
+  background-color: yellow;
+  letter-spacing: 2px;
+}
+.next:hover{
+  background-color:rgb(221, 221, 19);
+}
+.correct{
+  background-color: rgb(21, 185, 70);
+}
+.completed{
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-text-stroke: 2px black;
+  color: rgb(13, 93, 197); 
+  text-align: center;
+  margin: 110px auto 50px auto;
+  line-height: 80px;
+}
+.score{
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 60px;
+}
+.play-again{
+  padding: 16px 40px 16px 40px;
+  margin: 80px 60px 20px 60px;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  background-color: rgb(243, 228, 18);
+  box-shadow: 3px 6px 40px rgb(125, 127, 128);
+}
+.play-again:hover{
+  background-color: black;
+  color: white;
+}
+/*Home*/
+.thunder{
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 10px auto 50px auto;
+  text-align: center;
+}
+.main-title{
+  font-size: 80px;
+  -webkit-text-stroke: 2px black;
+  color: white; 
+  margin: 30px;
+}
+.welcome-icon, .welcome-headphones{
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+}
+.main-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px auto 20px auto;
+  padding: 8px;
+  margin: 8px;
+  border: 4px solid white;
+  border-radius: 19px;
+  background-color: rgb(105, 147, 236);
+  box-shadow: 3px 6px 30px rgb(105, 147, 236);
+}
+.main-message{
+  margin: 18px 40px 30px 40px;
+  border: 4px solid black;
+  padding: 40px;
+  border-radius: 108px 0 108px 0;
+  box-shadow: 3px 6px 30px rgb(151, 152, 155);
+  background-color: rgb(225, 226, 228);
+  line-height: 40px;
+}
+.main-text{
+  margin: 20px 100px 30px 100px;
+}
+.main-text p{
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+}
+.second{
+  padding-top: 20px;
+}
+.phrase{
+  font-size: 34px;
+  background-color:rgb(43, 106, 224);
+  color: white;
+  text-transform: uppercase;
+  padding: 11px;
+  margin: 16px 109px 6px 109px;
+  border-radius: 16px;
+}
+
+/*Songs*/
+.songs-section{
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 240px 22px 220px;
+  line-height: 50px;
+  -webkit-text-stroke: 2px rgb(238, 34, 136);
+  color: white; 
+}
+.songs-container{
+  margin: 0 30px 20px 20px;
+  padding: 40px;
+}
+.genres-title{
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 30px;
+  margin: 40px 60px 40px 10px;
+  border-bottom: 1px solid gray;
+  padding: 2px;
+}
+.order{
+  display: grid;
+  grid-template: repeat(2,360px) / repeat(3, 280px);
+  text-transform: uppercase;
+  margin: 0;
+}
+.order p{
+  font-size: 28px;
+  font-size: bold;
+  border: 5px solid rgb(18, 121, 238);
+  background-color: rgb(72, 205, 245);
+  box-shadow: 2px 2px 10px rgb(18, 121, 238);
+  border-radius: 0 60px 0 60px;
+  padding: 8px;
+  margin: 0 10px 10px 20px;
+}
+.order iframe{
+  width: 300px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  border: 16px solid white;
+  box-shadow: none;
+}
+.order h4{
+  text-transform: capitalize;
+  font-size: 18px;
+}
