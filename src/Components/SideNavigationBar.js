@@ -3,7 +3,6 @@ import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 import AlbumIcon from '@material-ui/icons/Album';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import '../App.css';
-import {Link} from 'react-router-dom';
 
 export const SideBarData = [
     {
@@ -34,7 +33,6 @@ const SideNavigationBar = () => {
                 </div>
                 <h5>Menu</h5>
                 <ul className='nav-bar-list'>
-                    <Link to='/' className='home'></Link>
                     {SideBarData.map((value, key) => {
                         return (
                             <li
